@@ -5,7 +5,7 @@ A web application that helps students track and manage job notifications easily.
 ---
 
 ## 🌐 Live Demo
-🔗 https://your-live-link.com
+🔗 https://job-notification-tracker-rouge.vercel.app/
 
 ---
 
@@ -50,5 +50,6 @@ Hosted on Netlify.
 
 ## 🌐 Live Demo
 https://job-notification-tracker-rouge.vercel.app/
+
 
 
