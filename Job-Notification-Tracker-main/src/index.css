@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* KodNest Premium Build System */
+    /* Background: warm off-white */
+    --background: 40 23% 96%;
+    --foreground: 0 0% 7%;
+
+    /* Cards: pure white on off-white */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    /* Primary: deep red #8B0000 */
+    --primary: 0 100% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: outlined / neutral */
+    --secondary: 40 23% 96%;
+    --secondary-foreground: 0 0% 7%;
+
+    /* Muted: warm gray */
+    --muted: 40 10% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent: same as primary for consistency */
+    --accent: 0 100% 27%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success: muted green */
+    --success: 152 35% 42%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning: muted amber */
+    --warning: 38 70% 50%;
+    --warning-foreground: 0 0% 7%;
+
+    /* Destructive */
+    --destructive: 0 65% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 0 100% 27%;
+
+    --radius: 0.375rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 0 100% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 10% 92%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 40 10% 88%;
+    --sidebar-ring: 0 100% 27%;
+
+    /* Typography */
+    --font-serif: 'Lora', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Spacing scale: 8, 16, 24, 40, 64 */
+    --space-1: 0.5rem;   /* 8px */
+    --space-2: 1rem;     /* 16px */
+    --space-3: 1.5rem;   /* 24px */
+    --space-4: 2.5rem;   /* 40px */
+    --space-5: 4rem;     /* 64px */
+
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 200ms ease-in-out;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 40 23% 96%;
+    --card: 0 0% 8%;
+    --card-foreground: 40 23% 96%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 40 23% 96%;
+    --primary: 0 80% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 23% 96%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 80% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 80% 45%;
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 40 23% 96%;
+    --sidebar-primary: 0 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 40 23% 96%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 80% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+}
+
+@layer utilities {
+  .text-serif {
+    font-family: var(--font-serif);
+  }
+  .text-sans {
+    font-family: var(--font-sans);
+  }
+  .max-w-prose {
+    max-width: 720px;
+  }
+  .transition-system {
+    transition: all var(--transition-base);
+  }
+}
