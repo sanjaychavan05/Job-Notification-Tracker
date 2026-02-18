@@ -16,6 +16,8 @@ A web application that helps students track and manage job notifications easily.
 - Clean and modern UI
 
 ---
+Developed by: https://github.com/sanjaychavan05
+
 
 ## 🛠 Tech Stack
 - React
@@ -50,6 +52,7 @@ Hosted on Netlify.
 
 ## 🌐 Live Demo
 https://job-notification-tracker-rouge.vercel.app/
+
 
 
 
